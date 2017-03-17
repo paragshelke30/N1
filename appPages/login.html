@@ -1,0 +1,24 @@
+<div ng-include="'app/navbar/navbar.html'"></div>
+<md-content layout="column" layout-align="center center">
+  <md-card md-theme="dark-grey" md-theme-watch>
+    <div layout="column" layout-align="center center" layout-margin>
+      <img class="logo-image" src="images/images/logo.png"/>
+      <div class="md-headline">Web Apps</div>
+    </div>
+    <md-card-content>
+      <md-input-container class="md-icon-float md-block">
+        <label>Name</label>
+        <md-icon md-svg-src="images/mi/account-outline.svg"></md-icon>
+        <input ng-model="user.name" type="text" required md-no-asterisk/>
+      </md-input-container>
+      <md-input-container class="md-icon-float md-block">
+        <label>Password</label>
+        <md-icon md-svg-src="images/mi/lock-outline.svg" class="name"></md-icon>
+        <input ng-model="user.password" type="password" required md-no-asterisk/>
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="end center">
+      <md-button class="md-raised md-primary" ui-sref="admin">Login</md-button>
+    </md-card-actions>
+  </md-card>
+</md-content>
